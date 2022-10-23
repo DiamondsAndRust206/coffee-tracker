@@ -4,9 +4,9 @@ import React from "react";
 function Header() {
   return (
     <React.Fragment>
-      <div style={headerStyles}>
-        <h1>Coffee Tracker</h1>
-      </div>
+  
+      <h1>Coffee Tracker</h1>
+
     </React.Fragment>
   );
 }
