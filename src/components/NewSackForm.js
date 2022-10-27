@@ -8,7 +8,7 @@ function NewSackForm(props) {
 
   function handleNewSackFormSubmission(event){
     event.preventDefault();
-    props.onNewSackCreation({name: event.target.name.value, roast: event.target.roast.value, price: event.target.price.value, origin: event.target.origin.value, lbs: event.target.lbs.value, id: v4()});
+    props.onNewSackCreation({name: event.target.name.value, roast: event.target.roast.value, price: parseInt(event.target.price.value), origin: event.target.origin.value, lbs: parseInt(event.target.lbs.value), id: v4()});
   }
 
   return (
